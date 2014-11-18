@@ -15,6 +15,11 @@ inspector-example-files is a PRIDE API licensed under [Apache License 2.0](http:
 
 mzIdentML is one of the standards developed by the Proteomics Informatics working group of the PSI  [(More)](http://www.psidev.info/mzidentml)
 
+List of Examples:
+
+ -> Mascot Folder: 
+ ->->(example 1): Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
+ 
 
 # Getting Help
 
