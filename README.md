@@ -18,8 +18,12 @@ mzIdentML is one of the standards developed by the Proteomics Informatics workin
 List of Examples:
 
 
- -> Mascot Folder: 
-    (example 1): Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
+-> Mascot Folder: Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
+    
+-> MS-GF+: 
+
+-> Scaffold: Tao D, et al. The acute transcriptomic and proteomic response of HC-04 hepatoma cells to hepatocyte growth factor and its implications for Plasmodium falciparum sporozoite invasion. Mol Cell Proteomics. 2014 May;13(5):1153-64. (HepG2HGFsolB02T01c.mzid.gz, HepG2HGFsolB02T01c.mzid_HepG2HGFsolB02T01c.MGF.gz)
+
  
 
 # Getting Help
