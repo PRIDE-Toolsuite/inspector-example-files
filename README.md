@@ -15,81 +15,29 @@ inspector-example-files is a PRIDE API licensed under [Apache License 2.0](http:
 
 mzIdentML is one of the standards developed by the Proteomics Informatics working group of the PSI  [(More)](http://www.psidev.info/mzidentml)
 
-List of Examples:
+The examples are listed by Search Engines exporters (Mascot Folder, MS-GF+, Scaffold, Myrimatch, ProteinPilot, peptide-shacker). For all the outputs we provided the mzIdentML and 
+the corresponding peak files used for protein identification in mgf, mzML or mzXML, etc.
+
+# PRIDE-XML
 
 
--> Mascot Folder: Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
-    
--> MS-GF+: 
+The default PRIDE Submission is a ProteomeXchange Complete Submission where the Result files are PRIDE XML files. Submitters can create PRIDE xml files out of the MS/MS output data using the PRIDE Converter 2 tool. 
+PRIDE Converter 2 is completely free and open source. PRIDE Converter 2 converts MS/MS data from most common data formats into valid PRIDE XML files.
+In PRIDE XML different to mzIdentML and mzTab the spectra and the protein/peptide identification information is included in the same file. [(More)](http://www.ebi.ac.uk/pride/help/archive/submission/pridexml)
 
--> Scaffold: Tao D, et al. The acute transcriptomic and proteomic response of HC-04 hepatoma cells to hepatocyte growth factor and its implications for Plasmodium falciparum sporozoite invasion. Mol Cell Proteomics. 2014 May;13(5):1153-64. (HepG2HGFsolB02T01c.mzid.gz, HepG2HGFsolB02T01c.mzid_HepG2HGFsolB02T01c.MGF.gz)
 
- 
+# mzTab
 
-# Getting Help
+mzTab is meant to be a light-weight, tab-delimited file format for proteomics data. The target audience for this format are
+primarily researchers outside of proteomics. It should be easy to parse and only contain the minimal information required to
+evaluate the results of a proteomics experiment. One of the goals of this file format is that it, for example, should be possible for a biologist 
+to open such a file in Excel and still be able to "see" the data. This format should also become a way to disseminate proteomics
+results through protocols such as DAS. [(More)](https://code.google.com/p/mztab/) 
 
-If you have questions or need additional help, please contact the PRIDE Helpdesk at the EBI: pride-support at ebi.ac.uk (replace at with @).
 
-Please send us your feedback, including error reports, improvement suggestions, new feature requests and any other things you might want to suggest to the PRIDE team.
+# peak-files
 
-# This library has been used in:
+Peak files is a list of spectra files in different file formats such as peak lists (mgf, pkl, ms2, dta) and standard file formats (mzMl, mzData, mzXML). 
 
-* Wang, R., Fabregat, A., Ríos, D., Ovelleiro, D., Foster, J. M., Côté, R. G., ... & Vizcaíno, J. A. (2012). PRIDE Inspector: a tool to visualize and validate MS proteomics data. Nature biotechnology, 30(2), 135-137. [PDF File](http://www.nature.com/nbt/journal/v30/n2/pdf/nbt.2112.pdf), [Pubmed Record](http://www.ncbi.nlm.nih.gov/pubmed/22318026)
-* Vizcaíno, J. A., Côté, R. G., Csordas, A., Dianes, J. A., Fabregat, A., Foster, J. M., ... & Hermjakob, H. (2013). The PRoteomics IDEntifications (PRIDE) database and associated tools: status in 2013. Nucleic acids research, 41(D1), D1063-D1069. [PRIDE-Archive](http://www.ebi.ac.uk/pride/archive/)
-
-How to use ms-data-core-api
-===============
-
-# Using ms-data-core-api 
-
-### Reading a mzIdentML file:
-
-This example shows how to read an mzIdentML file and retrieve the information from them:
-
-```java
-//Open an inputFile mzIdentml File using memory 
-MzIdentMLControllerImpl mzIdentMlController = new MzIdentMLControllerImpl(inputFile, true);
-
-//Print size of the Sample List
-List<Sample> samples = mzIdentMlController.getSamples();
-System.out.println(samples.size());
-
-//Print the Id of the first sample
-System.out.println(samples.get(0).getId());
-
-//Print size of the Software List
-System.out.println(software.size());
-
-//Print the Name of the first Software
-System.out.println(software.get(0).getName());
-
-//Retrieve the Identification Metadata    
-IdentificationMetaData experiment = mzIdentMlController.getIdentificationMetaData();
-// test SearchDatabase
-List<SearchDataBase> databases = experiment.getSearchDataBases();
-        
-// test SpectrumIdentificationProtocol
-List<SpectrumIdentificationProtocol> spectrumIdentificationProtocol = experiment.getSpectrumIdentificationProtocols();
-
-// Retrieve the Protein Identification Protocol
-Protocol proteinDetectionProtocol = experiment.getProteinDetectionProtocol();
-
-//Retrieve all Protein Identifications
-List<Comparable> identifications = new ArrayList<Comparable>(mzIdentMlController.getProteinIds());
-```
-
-### Reading a PRIDE XML file:
-
-This example shows how to read an PRIDE XML file and retrieve the information from them:
-
-```java
-//Open an inputFile mzIdentml File using memory 
-PrideXmlControllerImpl prideXMLController = new PrideXmlControllerImpl(inputFile);
-
-// You can use the example above and the same functions to retrieve the data using this controller for example:
-//Print size of the Sample List
-List<Sample> samples = prideXMLController.getSamples();
-System.out.println(samples.size());
-```
 
 
