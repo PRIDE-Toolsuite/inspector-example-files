@@ -19,8 +19,7 @@ List of Examples:
 
 
  -> Mascot Folder: 
- 
- ->->(example 1): Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
+    (example 1): Perez-Riverol Y, et al. HI-bone: a scoring system for identifying phenylisothiocyanate-derivatized peptides based on precursor mass and high intensity fragment ions. Anal Chem. 2013 Apr 2;85(7):3515-20. (data-no-pitc-34.mzid.gz, data-no-pitc-34.mgf.gz)
  
 
 # Getting Help
