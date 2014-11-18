@@ -13,7 +13,8 @@ inspector-example-files is a PRIDE API licensed under [Apache License 2.0](http:
 
 # mzIdentML
 
-mzIdentML is one of the standards developed by the Proteomics Informatics working group of the PSI [main page](http://www.psidev.info/mzidentml)
+mzIdentML is one of the standards developed by the Proteomics Informatics working group of the PSI  [(More)](http://www.psidev.info/mzidentml)
+
 
 # Getting Help
 
